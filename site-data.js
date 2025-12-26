@@ -27,7 +27,7 @@ window.SITE = {
     {
       name: "PromptGenius",
       url: "https://getpromptgenius.com/",
-      description: "Large language model-agnostic Chrome extension that helps you optimize your AI prompts"
+      description: "Large Language Model-agnostic Chrome extension that optimizes your AI prompts"
     },
     {
       name: "TEK2day Dashboard",
@@ -37,7 +37,7 @@ window.SITE = {
     {
       name: "TEK2day Holdings",
       url: "https://tek2dayholdings.com/",
-      description: "SaaS, AI, E-Commerce, Content"
+      description: "Holding company for TEK2day properties across FinTech, AI, Content"
     },
     {
       name: "TEK2day Newsletter",
@@ -78,5 +78,6 @@ window.SITE = {
     twitter: []
   }
 };
+
 
 
