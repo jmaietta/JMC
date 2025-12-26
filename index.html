@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jon Maietta — Entrepreneur. Links, companies, and technology-related interests."
+    />
+    <title>Jon Maietta</title>
+
+    <meta property="og:title" content="Jon Maietta" />
+    <meta
+      property="og:description"
+      content="Entrepreneur. Links, companies, and technology-related interests."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container">
+        <div class="hero">
+          <!-- Optional avatar -->
+          <!-- <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Jon Maietta" /> -->
+
+          <div>
+            <h1 class="title">Jon Maietta</h1>
+            <p class="subtitle">Entrepreneur.</p>
+
+            <nav class="links" aria-label="Social links" id="socialLinks">
+              <!-- populated by JS -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="section" aria-labelledby="companies-title">
+        <div class="section-head">
+          <h2 id="companies-title">Companies</h2>
+          <p class="section-subtext">A few things I’m building / involved in.</p>
+        </div>
+        <div class="card-grid" id="companyCards">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="interests-title">
+        <div class="section-head">
+          <h2 id="interests-title">Technology-related interests</h2>
+          <p class="section-subtext">
+            People and accounts I follow (AI, software, research). For X follows, see my X profile above.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>YouTube</h3>
+          <ul class="list" id="youtubeList"></ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="muted">© <span id="year"></span> Jon Maietta</p>
+      </footer>
+    </main>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
