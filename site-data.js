@@ -1,7 +1,7 @@
 window.SITE = {
   person: {
     name: "Jon Maietta",
-    tagline: "Entrepreneur.",
+    tagline: "Entrepreneur",
     location: "United States",
     email: "jmaietta@tek2day.com"
   },
@@ -78,6 +78,7 @@ window.SITE = {
     twitter: []
   }
 };
+
 
 
 
