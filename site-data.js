@@ -9,7 +9,8 @@ window.SITE = {
   social: [
     { label: "GitHub", url: "https://github.com/jmaietta", icon: "github" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/jonathanmaietta/", icon: "linkedin" },
-    { label: "X", url: "https://x.com/JonathanMaietta", icon: "twitter" }
+    { label: "X", url: "https://x.com/JonathanMaietta", icon: "twitter" },
+    { label: "Email", url: "mailto:jmaietta@tek2day.com", icon: "email" }
   ],
 
   companies: [
@@ -77,4 +78,5 @@ window.SITE = {
     twitter: []
   }
 };
+
 
