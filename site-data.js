@@ -20,9 +20,9 @@ window.SITE = {
       description: "CEO Analytics for investors and board members"
     },
     {
-      name: "FinModel",
-      url: "https://finmodel.app/",
-      description: "Automated Income Statement builder for equity analysts"
+      name: "EDGAR Watcher",
+      url: "https://edgar.tek2dayholdings.com/",
+      description: "SEC filings monitor and alerts"
     },
     {
       name: "PromptGenius",
@@ -78,7 +78,3 @@ window.SITE = {
     twitter: []
   }
 };
-
-
-
-
