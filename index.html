@@ -28,34 +28,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-        :root {
-      /* Light theme (default) */
-      --bg-primary: #f6f8fb;
-      --bg-secondary: #ffffff;
-      --bg-card: #ffffff;
-      --bg-card-hover: #f1f5f9;
-      --border: #e5e7eb;
-      --border-hover: #cbd5e1;
+    :root {
+      --bg-primary: #0c0c0f;
+      --bg-secondary: #141419;
+      --bg-card: #1a1a22;
+      --bg-card-hover: #22222e;
+      --border: #2a2a38;
+      --border-hover: #4a4a5e;
 
-      --text-primary: #0f172a;
-      --text-secondary: #334155;
-      --text-muted: #64748b;
+      --text-primary: #ededf0;
+      --text-secondary: #9393a8;
+      --text-muted: #5c5c72;
 
       --accent: #00d4aa;
       --accent-light: #33ffd2;
-      --accent-dim: rgba(0, 212, 170, 0.12);
-      --accent-glow: rgba(0, 212, 170, 0.18);
+      --accent-dim: rgba(0, 212, 170, 0.10);
+      --accent-glow: rgba(0, 212, 170, 0.25);
 
       --accent2: #7c6aff;
-      --accent2-dim: rgba(124, 106, 255, 0.12);
+      --accent2-dim: rgba(124, 106, 255, 0.10);
 
       --anthropic: #d4a574;
-      --anthropic-dim: rgba(212, 165, 116, 0.12);
+      --anthropic-dim: rgba(212, 165, 116, 0.10);
 
-      --green: #16a34a;
+      --green: #34d399;
 
-      --on-accent: #06121b;
-      --grid-dot: rgba(15, 23, 42, 0.045);
+      --on-accent: #0c0c0f;
+      --grid-dot: rgba(0, 212, 170, 0.04);
 
       --font-heading: 'Outfit', system-ui, sans-serif;
       --font-body: 'Outfit', system-ui, sans-serif;
@@ -66,40 +65,8 @@
       --radius-lg: 12px;
     }
 
-    /* Auto dark mode for users who prefer it */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-primary: #0c0c0f;
-        --bg-secondary: #141419;
-        --bg-card: #1a1a22;
-        --bg-card-hover: #22222e;
-        --border: #2a2a38;
-        --border-hover: #4a4a5e;
-
-        --text-primary: #ededf0;
-        --text-secondary: #9393a8;
-        --text-muted: #5c5c72;
-
-        --accent: #00d4aa;
-        --accent-light: #33ffd2;
-        --accent-dim: rgba(0, 212, 170, 0.10);
-        --accent-glow: rgba(0, 212, 170, 0.25);
-
-        --accent2: #7c6aff;
-        --accent2-dim: rgba(124, 106, 255, 0.10);
-
-        --anthropic: #d4a574;
-        --anthropic-dim: rgba(212, 165, 116, 0.10);
-
-        --green: #34d399;
-
-        --on-accent: #0c0c0f;
-        --grid-dot: rgba(0, 212, 170, 0.04);
-      }
-    }
-
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; color-scheme: dark; }
 
     body {
       font-family: var(--font-body);
@@ -672,7 +639,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Replace with your actual site-data.js entries
     const youtubeChannels = [
       { name: "a16z", url: "https://www.youtube.com/@a16z" },
       { name: "Acquired", url: "https://www.youtube.com/@AcquiredFM" },
