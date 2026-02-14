@@ -29,32 +29,32 @@
 
   <style>
     :root {
-      --bg-primary: #0c0c0f;
-      --bg-secondary: #141419;
-      --bg-card: #1a1a22;
-      --bg-card-hover: #22222e;
-      --border: #2a2a38;
-      --border-hover: #4a4a5e;
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #131313;
+      --bg-card: #1a1a1a;
+      --bg-card-hover: #222222;
+      --border: #2a2a2a;
+      --border-hover: #444444;
 
-      --text-primary: #ededf0;
-      --text-secondary: #9393a8;
-      --text-muted: #5c5c72;
+      --text-primary: #f0f0f0;
+      --text-secondary: #a0a0a0;
+      --text-muted: #666666;
 
-      --accent: #00d4aa;
-      --accent-light: #33ffd2;
-      --accent-dim: rgba(0, 212, 170, 0.10);
-      --accent-glow: rgba(0, 212, 170, 0.25);
+      --accent: #dc2626;
+      --accent-light: #f87171;
+      --accent-dim: rgba(220, 38, 38, 0.12);
+      --accent-glow: rgba(220, 38, 38, 0.30);
 
-      --accent2: #7c6aff;
-      --accent2-dim: rgba(124, 106, 255, 0.10);
+      --accent2: #888888;
+      --accent2-dim: rgba(136, 136, 136, 0.10);
 
       --anthropic: #d4a574;
       --anthropic-dim: rgba(212, 165, 116, 0.10);
 
-      --green: #34d399;
+      --green: #a0a0a0;
 
-      --on-accent: #0c0c0f;
-      --grid-dot: rgba(0, 212, 170, 0.04);
+      --on-accent: #ffffff;
+      --grid-dot: rgba(255, 255, 255, 0.025);
 
       --font-heading: 'Outfit', system-ui, sans-serif;
       --font-body: 'Outfit', system-ui, sans-serif;
@@ -136,7 +136,7 @@
       position: absolute;
       top: -80px; left: 50%; transform: translateX(-50%);
       width: 600px; height: 450px;
-      background: radial-gradient(ellipse, rgba(0, 212, 170, 0.05) 0%, rgba(124, 106, 255, 0.025) 40%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(220, 38, 38, 0.05) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 70%);
       pointer-events: none;
     }
 
@@ -198,7 +198,7 @@
       white-space: nowrap;
     }
     .cred-tag.tech { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
-    .cred-tag.finance { border-color: var(--accent2); color: #a899ff; background: var(--accent2-dim); }
+    .cred-tag.finance { border-color: var(--accent2); color: #aaaaaa; background: var(--accent2-dim); }
 
     /* ── Social row ── */
     .social-row { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
@@ -256,15 +256,15 @@
       border-color: var(--accent);
       background: var(--bg-card-hover);
       transform: translateY(-2px);
-      box-shadow: 0 4px 24px rgba(0, 212, 170, 0.06);
+      box-shadow: 0 4px 24px rgba(220, 38, 38, 0.08);
     }
     .product-card.featured {
       border-color: var(--border-hover);
-      background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 212, 170, 0.04) 100%);
+      background: linear-gradient(135deg, var(--bg-card) 0%, rgba(220, 38, 38, 0.04) 100%);
     }
     .product-card.featured:hover {
       border-color: var(--accent);
-      box-shadow: 0 4px 30px rgba(0, 212, 170, 0.1);
+      box-shadow: 0 4px 30px rgba(220, 38, 38, 0.12);
     }
 
     .product-type {
@@ -302,9 +302,9 @@
       border: 1px solid rgba(212, 165, 116, 0.25);
     }
     .badge-appstore {
-      background: rgba(52, 211, 153, 0.1);
+      background: rgba(160, 160, 160, 0.1);
       color: var(--green);
-      border: 1px solid rgba(52, 211, 153, 0.2);
+      border: 1px solid rgba(160, 160, 160, 0.2);
     }
 
     .product-arrow {
@@ -356,8 +356,8 @@
       border: 2px solid var(--bg-primary);
       box-shadow: 0 0 8px var(--accent-glow);
     }
-    .timeline-item:nth-child(2)::before { background: var(--accent2); box-shadow: 0 0 8px rgba(124,106,255,0.3); }
-    .timeline-item:nth-child(3)::before { background: var(--accent2); box-shadow: 0 0 8px rgba(124,106,255,0.3); }
+    .timeline-item:nth-child(2)::before { background: var(--accent2); box-shadow: 0 0 8px rgba(136,136,136,0.3); }
+    .timeline-item:nth-child(3)::before { background: var(--accent2); box-shadow: 0 0 8px rgba(136,136,136,0.3); }
     .timeline-role { font-weight: 600; font-size: 0.95rem; }
     .timeline-company a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
     .timeline-company a:hover { color: var(--accent); }
