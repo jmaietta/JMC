@@ -28,30 +28,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-    :root {
-      --bg-primary: #0c0c0f;
-      --bg-secondary: #141419;
-      --bg-card: #1a1a22;
-      --bg-card-hover: #22222e;
-      --border: #2a2a38;
-      --border-hover: #4a4a5e;
+        :root {
+      /* Light theme (default) */
+      --bg-primary: #f6f8fb;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --bg-card-hover: #f1f5f9;
+      --border: #e5e7eb;
+      --border-hover: #cbd5e1;
 
-      --text-primary: #ededf0;
-      --text-secondary: #9393a8;
-      --text-muted: #5c5c72;
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
 
       --accent: #00d4aa;
       --accent-light: #33ffd2;
-      --accent-dim: rgba(0, 212, 170, 0.1);
-      --accent-glow: rgba(0, 212, 170, 0.25);
+      --accent-dim: rgba(0, 212, 170, 0.12);
+      --accent-glow: rgba(0, 212, 170, 0.18);
 
       --accent2: #7c6aff;
-      --accent2-dim: rgba(124, 106, 255, 0.1);
+      --accent2-dim: rgba(124, 106, 255, 0.12);
 
       --anthropic: #d4a574;
-      --anthropic-dim: rgba(212, 165, 116, 0.1);
+      --anthropic-dim: rgba(212, 165, 116, 0.12);
 
-      --green: #34d399;
+      --green: #16a34a;
+
+      --on-accent: #06121b;
+      --grid-dot: rgba(15, 23, 42, 0.045);
 
       --font-heading: 'Outfit', system-ui, sans-serif;
       --font-body: 'Outfit', system-ui, sans-serif;
@@ -60,6 +64,38 @@
       --container: 880px;
       --radius: 8px;
       --radius-lg: 12px;
+    }
+
+    /* Auto dark mode for users who prefer it */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #0c0c0f;
+        --bg-secondary: #141419;
+        --bg-card: #1a1a22;
+        --bg-card-hover: #22222e;
+        --border: #2a2a38;
+        --border-hover: #4a4a5e;
+
+        --text-primary: #ededf0;
+        --text-secondary: #9393a8;
+        --text-muted: #5c5c72;
+
+        --accent: #00d4aa;
+        --accent-light: #33ffd2;
+        --accent-dim: rgba(0, 212, 170, 0.10);
+        --accent-glow: rgba(0, 212, 170, 0.25);
+
+        --accent2: #7c6aff;
+        --accent2-dim: rgba(124, 106, 255, 0.10);
+
+        --anthropic: #d4a574;
+        --anthropic-dim: rgba(212, 165, 116, 0.10);
+
+        --green: #34d399;
+
+        --on-accent: #0c0c0f;
+        --grid-dot: rgba(0, 212, 170, 0.04);
+      }
     }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -78,7 +114,7 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: radial-gradient(circle, rgba(0, 212, 170, 0.04) 1px, transparent 1px);
+      background-image: radial-gradient(circle, var(--grid-dot) 1px, transparent 1px);
       background-size: 32px 32px;
       pointer-events: none;
       z-index: 0;
@@ -86,7 +122,7 @@
 
     .skip-link {
       position: absolute; top: -100%; left: 1rem;
-      background: var(--accent); color: var(--bg-primary);
+      background: var(--accent); color: var(--on-accent);
       padding: 0.5rem 1rem; border-radius: var(--radius);
       z-index: 100; font-weight: 600; text-decoration: none;
     }
@@ -133,7 +169,7 @@
       position: absolute;
       top: -80px; left: 50%; transform: translateX(-50%);
       width: 600px; height: 450px;
-      background: radial-gradient(ellipse, rgba(0, 212, 170, 0.06) 0%, rgba(124, 106, 255, 0.03) 40%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(0, 212, 170, 0.05) 0%, rgba(124, 106, 255, 0.025) 40%, transparent 70%);
       pointer-events: none;
     }
 
@@ -666,7 +702,7 @@
         a.innerHTML = `
           <svg class="interest-icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
-            <polygon fill="var(--bg-primary)" points="9.545,15.568 15.818,12 9.545,8.432"/>
+            <polygon fill="var(--bg-card)" points="9.545,15.568 15.818,12 9.545,8.432"/>
           </svg>
           ${ch.name}
         `;
