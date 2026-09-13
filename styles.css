@@ -1,7 +1,10 @@
+/* NOTE: styles.css is currently unused (index.html styles are inline).
+   Kept in sync with index.html tokens so a future <link rel="stylesheet">
+   swap is safe. Delete this file if the inline approach is permanent. */
 :root {
-  --bg: #ffffff;
-  --text: #111827;
-  --muted: #374151;
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --muted: #c2c2c2;
   --border: #e5e7eb;
 
   --link: #2563eb;

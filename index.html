@@ -7,6 +7,16 @@
   <title>Jon Maietta</title>
 
   <link rel="icon" href="favicon.svg?v=jm1" type="image/svg+xml" />
+  <link rel="canonical" href="https://jonmaietta.com/" />
+  <meta name="author" content="Jon Maietta" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person",
+   "name":"Jon Maietta","url":"https://jonmaietta.com/",
+   "jobTitle":"Founder & CEO, TEK2day Holdings",
+   "sameAs":["https://github.com/jmaietta","https://www.linkedin.com/in/jonathanmaietta/","https://x.com/JonathanMaietta"]}
+  </script>
 
   <meta property="og:title" content="Jon Maietta" />
   <meta property="og:description" content="FinTech entrepreneur & builder. Former capital markets executive. Founder of TEK2day Holdings & CEORater." />
@@ -22,10 +32,12 @@
   <meta name="twitter:description" content="FinTech entrepreneur & builder. Former capital markets executive. Founder of TEK2day Holdings & CEORater." />
   <meta name="twitter:image" content="https://jonmaietta.com/og.png" />
 
-  <!-- Fonts: Outfit (modern geometric tech) + Fira Code (real developer monospace) -->
+  <!-- Fonts: single request, used weights only, display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" /></noscript>
 
   <style>
     :root {
@@ -37,8 +49,8 @@
       --border-hover: #444444;
 
       --text-primary: #ffffff;
-      --text-secondary: #d6d6d6;
-      --text-muted: #a8a8a8;
+      --text-secondary: #e2e2e2;
+      --text-muted: #c2c2c2;
 
       --accent: #ffffff;
       --accent-light: #ffffff;
@@ -56,9 +68,9 @@
       --on-accent: #0a0a0a;
       --grid-dot: rgba(255, 255, 255, 0.04);
 
-      --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --font-heading: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-body: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
       --container: 880px;
       --radius: 8px;
@@ -413,6 +425,10 @@
     .d6 { animation-delay: 0.44s; }
     .d7 { animation-delay: 0.52s; }
 
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
     @media (max-width: 640px) {
       .header { padding: 3rem 0 2rem; }
       .hero-name { font-size: 2.6rem; }
@@ -492,6 +508,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Newsletter
         </a>
+        <a class="social-link" href="mailto:jmaietta@tek2day.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get in touch
+        </a>
       </nav>
     </div>
   </header>
@@ -508,7 +528,7 @@
       <p class="section-subtitle">AI-powered fintech applications I'm building and shipping.</p>
 
       <div class="card-grid">
-        <a href="https://agentkilby.com/" target="_blank" rel="noopener" class="product-card featured">
+        <a href="https://agentkilby.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open Kilby — AI agent for financial services">
           <div>
             <div class="product-type">FinTech · AI Agent · Enterprise</div>
             <div class="product-name">Kilby</div>
@@ -526,7 +546,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://www.ceorater.com/" target="_blank" rel="noopener" class="product-card featured">
+        <a href="https://www.ceorater.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open CEORater — CEO performance analytics for the S&P 500">
           <div>
             <div class="product-type">FinTech · SaaS · AI · Data</div>
             <div class="product-name">CEORater</div>
@@ -544,7 +564,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://edgar.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card">
+        <a href="https://edgar.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open EDGAR Watcher — SEC filing monitoring">
           <div>
             <div class="product-type">Enterprise · Data</div>
             <div class="product-name">EDGAR Watcher</div>
@@ -555,7 +575,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://dash.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card">
+        <a href="https://dash.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open T2D Dashboard — capital markets tools and content">
           <div>
             <div class="product-type">Capital Markets · Data & Analytics</div>
             <div class="product-name">T2D Dashboard</div>
@@ -566,7 +586,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://www.finclaw.dev/" target="_blank" rel="noopener" class="product-card">
+        <a href="https://www.finclaw.dev/" target="_blank" rel="noopener" class="product-card" aria-label="Open FinClaw — agent-focused financial skills registry">
           <div>
             <div class="product-type">Developer · Tools</div>
             <div class="product-name">FinClaw</div>
@@ -575,7 +595,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://pulse.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card">
+        <a href="https://pulse.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open T2D Pulse — AI, FinTech, and software news">
           <div>
             <div class="product-type">Content · AI · FinTech · Software</div>
             <div class="product-name">T2D Pulse</div>
@@ -584,7 +604,7 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://newsletter.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card">
+        <a href="https://newsletter.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open T2D Newsletter — technology and capital markets insight">
           <div>
             <div class="product-type">Content · Newsletter</div>
             <div class="product-name">T2D Newsletter</div>
@@ -688,6 +708,7 @@
         a.href = ch.url;
         a.target = '_blank';
         a.rel = 'noopener';
+        a.setAttribute('aria-label', 'Open ' + ch.name + ' on YouTube');
         a.innerHTML = `
           <svg class="interest-icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
