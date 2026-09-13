@@ -30,9 +30,9 @@ window.SITE = {
       description: "Large Language Model-agnostic Chrome extension that optimizes your AI prompts"
     },
     {
-      name: "TEK2day Dashboard",
-      url: "https://dash.tek2dayholdings.com/",
-      description: "Technology content aggregation site"
+      name: "TEK2day Finance",
+      url: "https://finance.tek2dayholdings.com/",
+      description: "Market data, fundamentals and alternative data platform for institutional and retail investors"
     },
     {
       name: "TEK2day Holdings",

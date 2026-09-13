@@ -20,7 +20,7 @@ Static single-page portfolio for Jon Maietta (Founder & CEO, TEK2day Holdings). 
 ## Content source of truth
 
 `site-data.js` is the intended single source of truth, but `index.html` currently hardcodes
-products (Kilby, CEORater, EDGAR Watcher, T2D Dashboard, FinClaw, T2D Pulse, T2D Newsletter)
+products (Kilby, CEORater, EDGAR Watcher, TEK2day Finance, FinClaw, T2D Pulse, T2D Newsletter)
 and YouTube follows inline. If you edit content, update **both** until the page is migrated
 to render from `site-data.js`.
 
