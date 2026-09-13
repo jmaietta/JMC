@@ -30,6 +30,11 @@ window.SITE = {
       description: "Large Language Model-agnostic Chrome extension that optimizes your AI prompts"
     },
     {
+      name: "TEK2day Earnings Calendar",
+      url: "https://calendar.tek2dayholdings.com/",
+      description: "Upcoming earnings dates and EPS estimates across 2,400+ publicly traded companies"
+    },
+    {
       name: "TEK2day Finance",
       url: "https://finance.tek2dayholdings.com/",
       description: "Market data, fundamentals and alternative data platform for institutional and retail investors"
