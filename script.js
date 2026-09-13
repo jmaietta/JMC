@@ -28,7 +28,7 @@ function renderSocialLinks() {
       class: "pill",
       href: s.url,
       target: "_blank",
-      rel: "noreferrer",
+      rel: "noopener noreferrer",
       "aria-label": s.label,
       html: `${icons[s.icon] ?? ""}<span>${s.label}</span>`,
     });
@@ -45,7 +45,7 @@ function renderCompanies() {
   (window.SITE?.companies || []).forEach((c) => {
     const title = document.createElement("h3");
     title.appendChild(
-      el("a", { href: c.url, target: "_blank", rel: "noreferrer" }, [
+      el("a", { href: c.url, target: "_blank", rel: "noopener noreferrer", "aria-label": `Open ${c.name} — ${c.description || "external site"}` }, [
         document.createTextNode(c.name),
       ])
     );
@@ -66,7 +66,7 @@ function renderList(listId, items) {
 
   (items || []).forEach((i) => {
     const li = document.createElement("li");
-    const a = el("a", { href: i.url, target: "_blank", rel: "noreferrer" }, [
+    const a = el("a", { href: i.url, target: "_blank", rel: "noopener noreferrer", "aria-label": `Open ${i.name} on YouTube` }, [
       document.createTextNode(i.name),
     ]);
     li.appendChild(a);
