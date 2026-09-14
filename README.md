@@ -20,12 +20,18 @@ Static single-page portfolio for Jon Maietta (Founder & CEO, TEK2day Holdings). 
 ## Content source of truth
 
 `site-data.js` is the intended single source of truth, but `index.html` currently hardcodes
-products (Kilby, CEORater, EDGAR Watcher, TEK2day Finance, FinClaw, T2D Pulse, T2D Newsletter)
-and YouTube follows inline. If you edit content, update **both** until the page is migrated
-to render from `site-data.js`.
+products (Kilby ★, TEK2day Finance ★, CEORater, T2D Newsletter ★, T2D Pulse ★,
+Earnings Calendar, EDGAR Watcher, FinClaw) and YouTube follows inline.
+If you edit content, update **both** until the page is migrated to render from `site-data.js`.
+
+Layout: Kilby + Finance full-width featured; remaining six in a 2-col grid
+(`.card-grid.two-col`, collapses to 1 col under 640px). Order is strategic
+(flagships first, content mid, utilities last) — not alphabetical.
 
 Known drift: `site-data.js` lists PromptGenius / TEK2day Holdings / Storefront (not on page);
 the page lists Kilby / FinClaw (not in `site-data.js`).
+CEORater no longer uses CEORaterScore™/AlphaScore/RevenueCAGRScore/CompScore —
+current methodology is tenure return vs. index + tenure + proxy pay (ceorater.com).
 
 ## Local preview
 

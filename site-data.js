@@ -17,7 +17,7 @@ window.SITE = {
     {
       name: "CEORater",
       url: "https://www.ceorater.com/",
-      description: "CEO Analytics for investors and board members"
+      description: "CEO performance in plain numbers — S&P 500 tenure returns vs. index, tenure and proxy pay; free with open API, CLI and MCP"
     },
     {
       name: "EDGAR Watcher",
