@@ -250,6 +250,21 @@
 
     /* ── Product cards ── */
     .card-grid { display: grid; gap: 0.75rem; }
+    .card-grid.two-col { grid-template-columns: 1fr 1fr; }
+    .flagship-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 100px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: var(--accent-dim);
+      margin-bottom: 0.5rem;
+    }
 
     .product-card {
       background: var(--bg-card);
@@ -434,6 +449,7 @@
       .hero-name { font-size: 2.6rem; }
       .credentials { gap: 0.4rem; }
       .cred-tag { font-size: 0.7rem; padding: 0.35rem 0.6rem; }
+      .card-grid.two-col { grid-template-columns: 1fr; }
       .product-card { grid-template-columns: 1fr; }
       .product-arrow { display: none; }
       .interest-grid { grid-template-columns: 1fr; }
@@ -530,10 +546,11 @@
       <div class="card-grid">
         <a href="https://agentkilby.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open Kilby — on-demand AI research for investment management">
           <div>
+            <span class="flagship-pill">★ Flagship</span>
             <div class="product-type">FinTech · AI Research · Investment Management</div>
             <div class="product-name">Kilby</div>
             <div class="product-desc">
-              On-demand AI aide for investors — blends filings, calls, market data, and your own files into polished, PDF-ready analysis. 180+ operator decision frameworks, 17 professional lenses, watchlist PDFs, and Slack/Google workflow integrations. Pay as you go, no subscription.
+              On-demand AI aide for investors — blends filings, calls, market data, and your own files into polished, PDF-ready analysis. Includes CEORater CEO intelligence, 180+ operator decision frameworks, 17 professional lenses, watchlist PDFs, and Slack/Google workflow integrations. Pay as you go, no subscription.
             </div>
             <div class="badge-stack">
               <span class="product-badge badge-anthropic">
@@ -546,19 +563,57 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://www.ceorater.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open CEORater — CEO performance analytics for the S&P 500">
+        <a href="https://finance.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open TEK2day Finance — market data and fundamentals platform">
           <div>
-            <div class="product-type">FinTech · SaaS · AI · Data</div>
+            <span class="flagship-pill">★ Flagship</span>
+            <div class="product-type">Capital Markets · Data & Analytics</div>
+            <div class="product-name">TEK2day Finance</div>
+            <div class="product-desc">
+              Market data, fundamentals, and alternative data for institutional and retail investors — equity briefs, peer benchmarking, and macro overview in one place. Includes CEORater CEO performance data.
+            </div>
+          </div>
+          <span class="product-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="card-grid two-col" style="margin-top: 0.75rem;">
+        <a href="https://www.ceorater.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open CEORater — CEO performance in plain numbers for the S&P 500">
+          <div>
+            <div class="product-type">FinTech · Data · Free</div>
             <div class="product-name">CEORater</div>
             <div class="product-desc">
-              CEO performance analytics for the S&P 500. Proprietary CEORaterScore™, AlphaScore, RevenueCAGRScore & CompScore metrics for investors.
+              CEO performance in plain numbers — every S&P 500 CEO's stock return over their own tenure vs. the index over the same window, plus tenure and proxy pay. Free, with open API, CLI, and MCP access.
             </div>
-            <div class="badge-stack">
-              <span class="product-badge badge-anthropic">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M13.5 2L2 13.5 10.5 22 22 10.5 13.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-                Powered by Claude Sonnet 4.5
-              </span>
-              <span class="product-badge badge-appstore">✓ Data & Analytics</span>
+          </div>
+          <span class="product-arrow">→</span>
+        </a>
+
+        <a href="https://newsletter.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open T2D Newsletter — technology and capital markets insight">
+          <div>
+            <div class="product-type">Content · Newsletter</div>
+            <div class="product-name">T2D Newsletter</div>
+            <div class="product-desc">
+              Thought leadership at the intersection of technology and the capital markets. Institutional investors, CXOs, and board members.
+            </div>
+          </div>
+          <span class="product-arrow">→</span>
+        </a>
+
+        <a href="https://pulse.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card featured" aria-label="Open T2D Pulse — AI, FinTech, and software news">
+          <div>
+            <div class="product-type">Content · AI · FinTech · Software</div>
+            <div class="product-name">T2D Pulse</div>
+            <div class="product-desc">The latest news across AI, FinTech, and Software.</div>
+          </div>
+          <span class="product-arrow">→</span>
+        </a>
+
+        <a href="https://calendar.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open TEK2day Earnings Calendar — upcoming earnings dates and EPS estimates">
+          <div>
+            <div class="product-type">Capital Markets · Data & Analytics</div>
+            <div class="product-name">TEK2day Earnings Calendar</div>
+            <div class="product-desc">
+              Day-by-day view of upcoming earnings — report dates and EPS estimates across 2,400+ publicly traded companies over a 3-month window.
             </div>
           </div>
           <span class="product-arrow">→</span>
@@ -575,53 +630,11 @@
           <span class="product-arrow">→</span>
         </a>
 
-        <a href="https://finance.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open TEK2day Finance — market data and fundamentals platform">
-          <div>
-            <div class="product-type">Capital Markets · Data & Analytics</div>
-            <div class="product-name">TEK2day Finance</div>
-            <div class="product-desc">
-              Market data, fundamentals, and alternative data for institutional and retail investors — equity briefs, peer benchmarking, and macro overview in one place.
-            </div>
-          </div>
-          <span class="product-arrow">→</span>
-        </a>
-
-        <a href="https://calendar.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open TEK2day Earnings Calendar — upcoming earnings dates and EPS estimates">
-          <div>
-            <div class="product-type">Capital Markets · Data & Analytics</div>
-            <div class="product-name">TEK2day Earnings Calendar</div>
-            <div class="product-desc">
-              Day-by-day view of upcoming earnings — report dates and EPS estimates across 2,400+ publicly traded companies over a 3-month window.
-            </div>
-          </div>
-          <span class="product-arrow">→</span>
-        </a>
-
         <a href="https://www.finclaw.dev/" target="_blank" rel="noopener" class="product-card" aria-label="Open FinClaw — agent-focused financial skills registry">
           <div>
             <div class="product-type">Developer · Tools</div>
             <div class="product-name">FinClaw</div>
             <div class="product-desc">Agent-focused financial skills registry.</div>
-          </div>
-          <span class="product-arrow">→</span>
-        </a>
-
-        <a href="https://pulse.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open T2D Pulse — AI, FinTech, and software news">
-          <div>
-            <div class="product-type">Content · AI · FinTech · Software</div>
-            <div class="product-name">T2D Pulse</div>
-            <div class="product-desc">The latest news across AI, FinTech, and Software.</div>
-          </div>
-          <span class="product-arrow">→</span>
-        </a>
-
-        <a href="https://newsletter.tek2dayholdings.com/" target="_blank" rel="noopener" class="product-card" aria-label="Open T2D Newsletter — technology and capital markets insight">
-          <div>
-            <div class="product-type">Content · Newsletter</div>
-            <div class="product-name">T2D Newsletter</div>
-            <div class="product-desc">
-              Thought leadership at the intersection of technology and the capital markets. Institutional investors, CXOs, and board members.
-            </div>
           </div>
           <span class="product-arrow">→</span>
         </a>
